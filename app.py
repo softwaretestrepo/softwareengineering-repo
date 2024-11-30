@@ -18,7 +18,6 @@ from database import init_db
 # .env 파일 로드
 load_dotenv()
 
-# Flask app setup
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY") or os.urandom(24)
 
